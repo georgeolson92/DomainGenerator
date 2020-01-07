@@ -40,20 +40,14 @@ namespace DomainApp
                 "miracle",
                 "scott",
                 "gro",
-                "code"
+                "code",
+                "portland",
+                "vancouver"
             };
 
             var domains = DomainLogic.GetDomains(words, tlds);
 
-            Console.WriteLine("Please enter in the filepath for the json file you want the domains to be saved to.");
-
-            string filePath = Console.ReadLine();
-            if (!filePath.Contains(".json"))
-            {
-                filePath = filePath + ".json";
-            }
-
-            DomainLogic.WriteToFile(domains, filePath);
+            DomainLogic.WriteToFile(domains, "domains.json");
         }
     }
 }
