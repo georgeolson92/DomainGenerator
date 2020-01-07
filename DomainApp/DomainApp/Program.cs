@@ -17,7 +17,7 @@ namespace DomainApp
 
             List<string> words = new List<string>();
 
-            string answerToQuestion = "Y";
+            /*string answerToQuestion = "Y";
 
             while (answerToQuestion == "Y" || answerToQuestion == "y")
             {
@@ -27,9 +27,9 @@ namespace DomainApp
 
                 Console.WriteLine("Would you like to add another? Please answer 'Y' for yes or 'N' for no.");
                 answerToQuestion = Console.ReadLine();
-            }
+            }*/
 
-            /*List<string> words = new List<string>()
+            words = new List<string>()
             {
                 "hawthorne",
                 "gardening",
@@ -41,16 +41,16 @@ namespace DomainApp
                 "scott",
                 "gro",
                 "code"
-            };*/
+            };
 
             var domains = DomainLogic.GetDomains(words, tlds);
 
-            Console.WriteLine("Please enter in the filepath for the text file you want the domains to be saved to.");
+            Console.WriteLine("Please enter in the filepath for the json file you want the domains to be saved to.");
 
             string filePath = Console.ReadLine();
-            if (!filePath.Contains(".txt"))
+            if (!filePath.Contains(".json"))
             {
-                filePath = filePath + ".txt";
+                filePath = filePath + ".json";
             }
 
             DomainLogic.WriteToFile(domains, filePath);

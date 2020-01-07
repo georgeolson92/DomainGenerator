@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.Json;
 
 namespace DomainApp.Logic
 {
@@ -39,13 +40,18 @@ namespace DomainApp.Logic
 
                 var tldIndex = random.Next(0, 2);
 
-                Domain newDomain = new Domain()
-                {
-                    URL = String.Join("-", wordsChosen.ToArray()) + tlds[tldIndex],
-                    Rating = 0
-                };
+                var findDomain = domains.Find(c => c.URL == String.Join("-", wordsChosen.ToArray()) + tlds[tldIndex]);
 
-                domains.Add(newDomain);
+                if (findDomain == null)
+                {
+                    Domain newDomain = new Domain()
+                    {
+                        URL = String.Join("-", wordsChosen.ToArray()) + tlds[tldIndex],
+                        Rating = 0
+                    };
+
+                    domains.Add(newDomain);
+                }
             }
 
             return domains;
@@ -55,13 +61,10 @@ namespace DomainApp.Logic
         {
             try
             {
+                var jsonList = JsonSerializer.Serialize(domains);
                 using (StreamWriter sw = File.CreateText(path))
                 {
-                    foreach (var domain in domains)
-                    {
-                        Console.WriteLine(domain.URL);
-                        sw.WriteLine(domain.URL);
-                    }
+                    sw.WriteLine(jsonList);
                 }
             }
             catch (Exception ex)
