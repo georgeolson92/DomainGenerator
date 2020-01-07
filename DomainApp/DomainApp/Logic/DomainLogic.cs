@@ -15,7 +15,7 @@ namespace DomainApp.Logic
 
             List<string> usedWords = new List<string>();
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i <= 10; i++)
             {
                 var random = new Random();
                 int numberOfWords = random.Next(1, 3);
