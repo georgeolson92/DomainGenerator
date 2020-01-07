@@ -1,0 +1,11 @@
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\bin\Debug\netcoreapp3.1\DomainApp.exe
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\bin\Debug\netcoreapp3.1\DomainApp.deps.json
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\bin\Debug\netcoreapp3.1\DomainApp.runtimeconfig.json
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\bin\Debug\netcoreapp3.1\DomainApp.runtimeconfig.dev.json
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\bin\Debug\netcoreapp3.1\DomainApp.dll
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\bin\Debug\netcoreapp3.1\DomainApp.pdb
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\obj\Debug\netcoreapp3.1\DomainApp.csprojAssemblyReference.cache
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\obj\Debug\netcoreapp3.1\DomainApp.AssemblyInfoInputs.cache
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\obj\Debug\netcoreapp3.1\DomainApp.AssemblyInfo.cs
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\obj\Debug\netcoreapp3.1\DomainApp.dll
+C:\Users\georg\Github\DomainApp\DomainApp\DomainApp\obj\Debug\netcoreapp3.1\DomainApp.pdb
